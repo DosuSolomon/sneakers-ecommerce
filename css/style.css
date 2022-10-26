@@ -1,43 +1,135 @@
-*{
+* {
   padding: 0;
   margin: 0;
   list-style: none;
+  font-family: "Kumbh Sans", sans-serif;
 }
 
-.container{
-  padding: 25px 100px 100px 100px;
+.container {
+  padding: 25px 150px 100px 150px;
   /* background: gray; */
 }
-.header{
+/* header */
+.header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.nav-right{
+.nav-right {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 40px;
 }
-#line{
+#line {
   height: 2px;
   background: hsl(223, 64%, 98%);
-  margin-top: 20px
+  margin-top: 20px;
 }
-.nav ul{
+.nav ul {
   display: flex;
   flex-direction: row;
-  color: hsl(219, 9%, 45%)
+  color: hsl(219, 9%, 45%);
 }
-ul li{
+ul li {
   padding: 0 20px;
 }
-.account{
-  display:flex;
+.account {
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 50px;
 }
+/* header */
+/* main section */
+.main {
+  display: flex;
+  flex-direction: row;
+  padding: 70px 50px;
+  justify-content: space-between;
+}
+.left-div {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  /*  */
+}
+.collections {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.collections img {
+  border-radius: 5px;
+  width: 70px;
+  height: 70px;
+}
+
+.right-div {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  justify-content: space-evenly;
+  padding: 30px 0;
+  flex: 0.75;
+  /* gap: 20px; */
+}
+/* right div */
+.name {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: hsl(26, 100%, 55%);
+  font-weight: 600;
+}
+.title-desc {
+  font-weight: 800;
+  font-size: 30px;
+}
+.desc {
+  font-size: 16px;
+  color: hsl(219, 9%, 45%);
+  line-height: 30px;
+}
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 100%; */
+  gap: 10px;
+}
+
+.cartBtn {
+  display: flex;
+  flex: 1.5;
+  padding: 0.6rem 3rem;
+  background: hsl(26, 100%, 55%);
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #fff;
+  gap: 1rem;
+  font-weight: 500;
+  box-shadow: 0px 12px 12px 1px hsl(25, 100%, 94%, 0.9);
+}
+.spin-box {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 40px;
+  background: hsl(223, 64%, 98%);
+  justify-content: space-around;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .main{
+    flex-direction: column;
+  }
+
+}
+/* main section */
